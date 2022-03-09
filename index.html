@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/9978afaa65.js" crossorigin="anonymous"></script>
     <style>
         html {
+            height: 100%;
             background: url(img/background.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -29,13 +30,8 @@
         #imgdiv {
 
 
-
             display: flex;
-
-
             align-items: center;
-
-
             justify-content: center;
         }
     </style>
@@ -45,54 +41,64 @@
 
 <body style="background-color: transparent;">
 
+    <div id="page-container" style=" position: relative;
+    min-height: 100vh;"> 
 
-    <div id="text-div" class="container" style="text-align: center; margin-bottom: 45px;">
-       
+    <div id="content-wrap" style="padding-bottom: 2.5rem; margin-bottom: 2.5rem;">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top" style="width: 100%;">
+        
+            
+            <a href="/index.html" class="navbar-brand ms-3" style="font-family: 'EB Garamond', serif;">
+                
+                   
+                
+                &nbsp;H.O.R.U.S</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Anasayfa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Hakkında</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+
+            </div>
+        
+    </nav>
+
+
+    <header>
+            <div class="container my-4" style="display:flex; align-items:center; justify-content:center;">
+                
+                <img src="img/afis-3.png" alt="" class="w-50 h-50">
+            </div>
+    </header>
+
+    <main>
+
+    </main>
+    
+    </div>
+    <!--
+    <footer class="py-5 bg-dark text-white text-center" style="position: absolute; bottom: 0; width: 100%;  height: 2.5rem;">
+        Copyright © H.O.R.U.S 2022
+    </footer>
+    -->
     </div>
 
-    
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top" style="width: 100%;">
-
-        <a href="#" class="navbar-brand ms-3">
-            <div class="container">
-                <img src="img/horus-2.4-amblem.png" alt="">
-            </div>
-        &nbsp;H.O.R.U.S</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Anasayfa</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Hakkında</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">İletişim</a>
-                </li>
-            </ul>
-
-        </div>
-
-    </nav>
-    
-
-    
-
-    <footer class="py-5 bg-dark text-white text-center">
-		Copyright © H.O.R.U.S 2022
-	</footer>
-    
-
-    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -101,7 +107,7 @@
 
 
 
-    
+
 
 </body>
 
