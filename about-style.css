@@ -107,7 +107,9 @@ header h1 {
     height: fit-content;
 }
 
-#section-b li .col {}
+#section-b li .col {
+    cursor: pointer;
+}
 
 
 .col-content {
