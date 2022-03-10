@@ -10,14 +10,14 @@ window.onload = function () {
         "cagin"
     ];
     console.log("Selam konsolda birsey mi yazdik diye baktigini goruyorum.")
-    var ayberkImg = document.getElementById("ayberkDiv")
-    var umutImg = document.getElementById("umutDiv")
-    var ekinImg = document.getElementById("ekinDiv")
-    var samilImg = document.getElementById("samilDiv")
-    var burakImg = document.getElementById("burakDiv")
-    var caginImg = document.getElementById("caginDiv")
-    var canImg = document.getElementById("canDiv")
-    var emreImg = document.getElementById("emreDiv")
+    var ayberkImg = document.getElementById("ayberkDiv");
+    var umutImg = document.getElementById("umutDiv");
+    var ekinImg = document.getElementById("ekinDiv");
+    var samilImg = document.getElementById("samilDiv");
+    var burakImg = document.getElementById("burakDiv");
+    var caginImg = document.getElementById("caginDiv");
+    var canImg = document.getElementById("canImage");
+    var emreImg = document.getElementById("emreDiv");
     if (ayberkImg) {
         ayberkImg.addEventListener("click", function () {
             if (document.getElementById("ayberk").style.display === "block") {
@@ -39,6 +39,7 @@ window.onload = function () {
         })
     }
     if (canImg) {
+        console.log("can")
         canImg.addEventListener("click", function () {
             if (document.getElementById("can").style.display === "block") {
                 document.getElementById("can").style.display = "none"
