@@ -43,21 +43,23 @@ img {
 
 /* Header */
 header {
-    height: 45rem;
-
-
+    height: auto;
+   
 }
 
 header .bg-image {
+    height: 80rem;
     position: absolute;
     background-image: url(img/drone.webp);
     background-size: cover;
-    background-position: center;
-    height: 45rem;
+    background-position:center;
+    
     width: 100%;
     opacity: 0.7;
     z-index: -1;
 }
+
+
 
 header h1 {
     padding: 11rem;
@@ -170,11 +172,51 @@ footer {
 footer a {
     color: #2690d4;
 }
+@media screen and (max-width:400px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width:576px) {
+
+    html {
+        font-size: 25px;
+    }
+
+
+    header {
+        height: 50rem;
+    }
+
+    
+    .content  {
+        padding: 50px;
+    }
+
+    .content p {
+        font-size: 35px;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+
 
 @media screen and (min-width:800px) {
 
     html {
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 
@@ -217,7 +259,7 @@ nav {
 }
 
 #logo-box .logo {
-    color: #fff;
+    
     font-weight: 700;
     font-size: 3.2rem;
 }
