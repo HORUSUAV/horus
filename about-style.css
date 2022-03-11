@@ -92,6 +92,7 @@ header h1 {
 /**section-b**/
 #section-b {
     background: url(img/space.jpg) no-repeat center center fixed;
+    background-size: cover;
 
 }
 
@@ -100,12 +101,25 @@ header h1 {
 }
 
 #section-b li {
-    background: #fff;
-    color: #333;
+    background: transparent;
+    border-radius: 50%;
+    width: 40vw;
+    height: auto;
+    color: rgb(179, 179, 179);
     margin-bottom: 1.5rem;
 
     height: fit-content;
     display: flexbox;
+}
+#section-b li p{
+    background-color: #333;
+    
+}
+.imgDiv{  /* circle border for images */
+    border: 1rem solid transparent;
+    border-radius: 50%;
+    width: 40vw;
+    height: auto;
 }
 
 #section-b li .col {
@@ -123,7 +137,15 @@ header h1 {
 
     padding: 1.5rem;
     text-align: center;
+    
+    
+}
+.col-content p{
     display: none;
+}
+.col-content .col-title{
+display:block;
+
 }
 
 
