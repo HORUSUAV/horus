@@ -1,3 +1,4 @@
+/*
 window.onload = function () {
     const nameList = [
         "ayberk",
@@ -100,3 +101,43 @@ window.onload = function () {
         })
     }
 }
+*/
+$(document).ready(function () {
+
+    var btn = $(".btn");
+
+    btn.click(function () {
+        $(".col-content p").toggle("slow");
+
+        $(this).css({
+            "background-color": "#614E9C",
+            "color": "#fff"
+        });
+
+        if ($(this).text() === "AYRINTILI BİLGİ") {
+            $(this).html("AYRINTILARI GİZLE");
+        }
+
+        else {
+            $(this).html("AYRINTILI BİLGİ");
+        }
+    });
+
+    btn.hover(function () {
+        $(this).css({
+            "background-color": "#eaeaea",
+            "color": "#333",
+            "cursor": "pointer"
+        })
+    }, function(){
+            $(this).css({
+                "background-color": "#614E9C",
+                "color": "#fff"
+            });
+        });
+        
+    
+
+
+
+});

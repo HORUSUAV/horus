@@ -68,21 +68,27 @@ header h1 {
 
 .btn {
     display: inline-block;
-    background-color: #333;
+    background-color: #614E9C;
     color: #fff;
     border: 1px solid #666;
     padding: 1.6rem 3.2rem;
-    margin: .5rem 0;
+    margin: 2.5rem 0;
     transition: all 0.3s linear;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+/*
 .btn:hover {
     background-color: #eaeaea;
     color: #333;
-    border-width: 2px;
-    font-weight: bold;
-
+    cursor: pointer;
+    
 }
+*/
+
+
 
 /**section-a**/
 #section-a {
@@ -124,14 +130,17 @@ header h1 {
     height: auto;
 }
 
+/*
 #section-b li .col {
     cursor: pointer;
     transition: opacity 0.7s ease-in-out;
 }
 
+
 #section-b li .col:hover {
     opacity: 0.83;
 }
+*/
 
 
 .col-content {
@@ -144,10 +153,18 @@ header h1 {
 }
 .col-content p{
     display: none;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
 }
 .col-content .col-title{
-display:block;
+    display:block;
+    color: #fff;
+}
 
+.col-content .col-title-department {
+    display: block;
+    color: #ffeba7;
 }
 
 
