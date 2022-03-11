@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -20,6 +21,7 @@ body{
     height: 100vh;
     width: 100%;
 }
+
 .section-center{
   position: absolute;
   top: 50%;
@@ -32,6 +34,7 @@ body{
   text-align: center;
   transform: translateY(-50%);
 }
+
 h1{
   font-weight: 800;
   font-size: 7vw;

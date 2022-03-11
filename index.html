@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9978afaa65.js" crossorigin="anonymous"></script>
     <style>
+        
         html {
             font-size: 7px;
             height: 100%;
@@ -17,14 +18,19 @@
             -o-background-size: cover;
             background-size: cover;
         }
-
+        
         body {
             font-size: 2rem;
         }
 
+       
+
         @media screen and (min-width: 576px) {
             html {
                 font-size: 28px;
+            }
+            #logoImage {
+                width: 30rem;
             }
         }
 
@@ -33,12 +39,22 @@
             html {
                 font-size: 18px;
             }
+            #logoImage {
+            width: 35rem;
+        }
+          
+           
         }
 
         @media screen and (min-width: 1200px) {
             html {
                 font-size: 12px;
             }
+            #logoImage {
+            width: 45rem;
+        }
+          
+          
         }
 
         .navbar-brand {
@@ -69,7 +85,10 @@
             </nav>
 
             <div class="section-center">
+                <!--
                 <h1 class="mb-0" style="font-family: 'EB Garamond', serif;">H.O.R.U.S</h1>
+                -->
+                <img id="logoImage" src="img/horus-2.4-amblem.png" alt=""  class="img-fluid">
             </div>
             <!--
         <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top" style="width: 100%;">
