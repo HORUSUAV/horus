@@ -136,8 +136,80 @@ $(document).ready(function () {
             });
         });
         
-    
+       
+    //Img hover information. Buggy, not recommended to use
+    /*
+    img.hover(function(){
+        let next = $(this).next();
+        let parag = next.children("p");
 
+        if( $(parag).attr("value")==1){
+        }
+        else {
+            $(parag).toggle("slow");
+        }
+        
+    });*/
+
+    // img hover visuals + new test
+    var img = $(" .imgDiv");
+    img.hover(function(){
+        $(this).css("background-color", "purple");
+        let next = $(this).next();
+        let parag = next.children("p");
+
+        if( $(parag).attr("value")==1 &&  $(parag).attr("clickedwhilevisible")==1){
+        }
+        else if((parag).attr("value")==1){
+
+        }
+        else {
+            $(parag).toggle("slow");
+        }
+
+        }, function(){
+            let next = $(this).next();
+        let parag = next.children("p");
+        $(this).css("background-color", "transparent");
+
+        if( $(parag).attr("clickedwhilevisible")==1){
+            //console.log("check clickedwhilevisible");
+            //console.log($(parag).attr("clickedwhilevisible"));
+            $(parag).attr("clickedwhilevisible", "0");
+        }
+        else if((parag).attr("value")==1){
+        }
+        else{
+            $(parag).toggle("slow");
+        }
+      });
+
+    //Img click information
+    img.click(function(){
+        let next = $(this).next();
+        let parag = next.children("p");
+        if($(parag).is(":visible") && $(parag).attr("value")==1){
+            $(parag).attr("clickedwhilevisible", "1");
+            $(parag).attr("value","0");
+            $(parag).toggle("slow");
+           }
+        else if($(parag).is(":visible")){
+         $(parag).attr("value", "1");
+         $(parag).attr("clickedwhilevisible", "1");
+
+         }
+         
+        if(!$(parag).is(":visible")){
+            $(parag).attr("value", "1");
+            $(parag).toggle("slow");
+        }
+
+            //console.log($(parag).attr("clickedwhilevisible"));
+
+    
+        
+     });
+    
 
 
 });
